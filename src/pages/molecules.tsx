@@ -300,9 +300,9 @@ const Molecules = () => {
                                     Step {activeStep + 1}
                                 </Typography>
 
-                                <AButton variant="text" color="colorful" onClick={handleBack}>
+                                {activeStep === 1 ? <AButton variant="text" color="colorful" onClick={handleBack}>
                                     Back
-                                </AButton>
+                                </AButton> : null }
                             </Stack>
                             <Stack direction="row" alignItems="center" justifyContent="space-between">
                                 {isStepOptional(activeStep) &&

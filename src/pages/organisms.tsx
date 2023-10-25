@@ -177,7 +177,7 @@ const Organisms = () => {
                                     onClick={handleCheckedRight}
                                     disabled={leftChecked.length === 0}
                                 >
-                                    &gt
+                                    {">"}
                                 </AButton>
                                 <AButton
                                     variant="outlined"
@@ -185,7 +185,7 @@ const Organisms = () => {
                                     onClick={handleCheckedLeft}
                                     disabled={rightChecked.length === 0}
                                 >
-                                    &lt
+                                    {"<"}
                                 </AButton>
                             </Stack>
                         </Stack>
